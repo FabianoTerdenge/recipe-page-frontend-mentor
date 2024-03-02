@@ -1,0 +1,69 @@
+* {
+    --custom-Nutmeg: hsl(14, 45%, 36%);
+    --custom-Dark-Raspberry: hsl(332, 51%, 32%);
+    --custom-White: hsl(0, 0%, 100%);
+    --custom-Rose-White: hsl(330, 100%, 98%);
+    --custom-Eggshell: hsl(30, 54%, 90%);
+    --custom-Light-Grey: hsl(30, 18%, 87%);
+    --custom-Wenge-Brown: hsl(30, 10%, 34%);
+    --custom-Dark-Charcoal: hsl(24, 5%, 18%);
+}
+@font-face {
+    font-family: outfit;
+    src: url(/assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+body {
+    margin: 0;
+    display: flex;
+    background-color: var(--custom-Eggshell);
+    justify-content: center;
+    margin: 100px 0px;
+    font-family: outfit;
+}
+main {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: var(--custom-White);
+    padding: 30px;
+}
+img {
+    border-radius: 10px;
+}
+
+h2 {
+    color: var(--custom-Nutmeg);
+    border-top: var(--custom-Light-Grey) 1px solid;
+    padding-top: 20px;
+}
+h2:first-of-type {
+    border: none; /* limits the scope of the previous rule */
+}
+h3 {
+    color: var(--custom-Dark-Raspberry);
+    margin-top: 0px;
+}
+th {
+    text-align: left;
+}
+
+tr {
+    border-bottom: var(--custom-Light-Grey) 1px solid;
+    border-top: 12px solid transparent;
+}
+td,bold{
+    font-family: outfit,sans-serif;
+    font-weight: 600;
+}
+table {
+    width: 100%;
+    border-collapse: collapse; 
+}
+.card{
+    background-color: var(--custom-Rose-White);
+    padding:20px;
+}
+li {
+    padding: 5px;
+}
