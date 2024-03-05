@@ -12,6 +12,11 @@
     font-family: outfit;
     src: url(/assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
 }
+@font-face {
+    font-family: youngserif;
+    src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
 body {
     margin: 0;
     display: flex;
@@ -31,14 +36,19 @@ main {
 img {
     border-radius: 10px;
 }
-
+h1,h2 {
+    font-family: youngserif;
+    font-weight: normal;
+}
 h2 {
     color: var(--custom-Nutmeg);
     border-top: var(--custom-Light-Grey) 1px solid;
     padding-top: 20px;
+    margin-bottom: 0px;
 }
 h2:first-of-type {
     border: none; /* limits the scope of the previous rule */
+    margin-top: 0px;
 }
 h3 {
     color: var(--custom-Dark-Raspberry);
@@ -46,24 +56,43 @@ h3 {
 }
 th {
     text-align: left;
+    padding-left: 30px;
+    font-weight: inherit;
 }
 
 tr {
-    border-bottom: var(--custom-Light-Grey) 1px solid;
-    border-top: 12px solid transparent;
+    border-bottom: 1px solid var(--custom-Light-Grey);
+    height: 20px;
 }
-td,bold{
-    font-family: outfit,sans-serif;
+td,
+bold {
     font-weight: 600;
+}
+td,
+th {
+    padding-bottom: 12px;
+    padding-top: 12px;
 }
 table {
     width: 100%;
-    border-collapse: collapse; 
+    border-collapse: collapse;
 }
-.card{
+td{
+    text-align: left;
+    color: var(--custom-Nutmeg);
+}
+.card {
     background-color: var(--custom-Rose-White);
-    padding:20px;
+    padding: 20px;
+    border-radius: 1%;
 }
 li {
     padding: 5px;
+}
+ ol[color] li::marker, ul[color] li::marker {
+    color: var(--custom-Nutmeg);
+    font-weight: 600;
+}
+p, li{
+    color:var(--custom-Wenge-Brown);
 }
